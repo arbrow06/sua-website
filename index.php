@@ -1,5 +1,5 @@
 <?php
-$title= "Syracuse University Ambulance";
+$title = "Syracuse University Ambulance";
 ?>
 <!DOCTYPE html>
 <html lang="en">
