@@ -50,7 +50,7 @@ $title = "Syracuse University Ambulance";
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand page-scroll" href="#page-top">Syracuse University Ambulance</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -60,10 +60,13 @@ $title = "Syracuse University Ambulance";
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#members">Members</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#news">News</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#media">Media</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
