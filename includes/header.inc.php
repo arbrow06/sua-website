@@ -1,5 +1,5 @@
 <?php
-include("D:\UniServer\www\orgs\sua\www\config.php");
+include(".\config.php");
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
