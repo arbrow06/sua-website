@@ -1,0 +1,198 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+/* Logo */
+h1 a { min-height:0; height:40px}
+
+/* Backgrounds */
+body{ 	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+		color:#555;
+}
+h1{background-image:none;}
+#container{background:#FFFFFF}
+.wufoo input.text, .wufoo textarea.textarea{background:#FFFFFF url(/images/fieldbg.gif) repeat-x top}
+.wufoo .focused{background:#dc7b36}
+.wufoo .instruct{background-color:#F5F5F5}
+
+/* Borders */
+#container{border:0 solid #cccccc}
+.wufoo .info{border-bottom:1px dotted #CCCCCC}
+.wufoo .section{}
+.wufoo .instruct{border:1px solid #e6e6e6}
+
+/* Typography */
+.wufoo .info h2{
+	color: #343434;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 26px;
+	padding-bottom: 20px;
+	font-size: 27px;}
+	
+.wufoo .info div{font:14px/1.6em Arial, Helvetica, sans-serif;
+	color:#555;}
+.wufoo .section h3{font-size:110%;font-family: Arial, Helvetica, sans-serif;background:#FFFFFF;color:#555}
+.wufoo .section div{font-family: Arial, Helvetica, sans-serif;}
+.wufoo label.desc{font-size: 15px;font-family: Arial, Helvetica, sans-serif;}
+.wufoo li div, .wufoo li div label, .wufoo li span label{font-family: Arial, Helvetica, sans-serif;color:#555}
+.wufoo input.text, .wufoo textarea.textarea, .wufoo select.select, .wufoo label.choice{font-size: 100%;font-family: Arial, Helvetica, sans-serif;color:#555}
+.wufoo label.choice{color:#555}
+.wufoo .instruct{font-size: 15px; font-family: Arial, Helvetica, sans-serif;color:#555
+}
+
+/* Drop Shadows */
+#top, #bottom{visibility:visible}
+p{ font-family: inherit; }
+
+/* Buttons */
+
+/* Start Button Styles --------------------------------------------- */
+input[type="button"], button {
+border:0 none;
+font:inherit;
+}
+*:focus{outline:0 none;}
+
+input[type="submit"] {
+
+font-family: Arial, Helvetica, sans-serif;
+
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+border-radius:5px;
+-moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.50);
+-webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.50);
+box-shadow:0 1px 3px rgba(0, 0, 0, 0.50);
+background:#FF5C00 url(http://sua.syr.edu/css/button-images/button-overlay.png) repeat-x;
+border:1px solid rgba(0, 0, 0, 0.25);
+color:#FFFFFF !important;
+cursor:pointer;
+display:inline-block;
+font-size: 11px;
+font-weight:bold;
+overflow:visible;
+padding:5px 15px 6px;
+position:relative;
+text-decoration:none;
+text-shadow:0 -1px 1px rgba(0, 0, 0, 0.25);
+width:auto;
+text-align:center;
+
+}
+
+
+input[type="button"], button {-moz-box-sizing: content-box;}/*fixes mozilla padding - mozilla only, doesn't need webkit or other values */
+input[type="button"]::-moz-focus-inner, button::-moz-focus-inner { padding:0;border:0 none; }/*fixes mozilla button padding - mozilla only, doesn't need webkit or other values */
+.clearfix:after {
+clear: both;
+content: '.';
+display: block;
+font-size: 0;
+line-height: 0;
+visibility: hidden;
+width: 0;
+height: 0;
+}
+/* General Button Styles, Cascades Down To Every Button ------------- */
+.button {
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+border-radius:5px;
+-moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.50);
+-webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.50);
+box-shadow:0 1px 3px rgba(0, 0, 0, 0.50);
+background:#FF5C00 url(http://sua.syr.edu/css/button-images/button-overlay.png) repeat-x;
+border:1px solid rgba(0, 0, 0, 0.25);
+color:#FFFFFF !important;
+cursor:pointer;
+display:inline-block;
+font-size: 11px;
+font-weight:bold;
+overflow:visible;
+padding:5px 15px 6px;
+position:relative;
+text-decoration:none;
+text-shadow:0 -1px 1px rgba(0, 0, 0, 0.25);
+width:auto;
+text-align:center;
+}
+.button:hover {
+background-color:#D45500;
+
+}
+/* Large Buttons ------------------------------------------------- */
+.large.button .btTxt submit {
+font-size: 11px;
+padding:8px 19px 9px;
+background-image:url(http://sua.syr.edu/css/button-images/large-button-overlay.png);
+}
+input[type="submit"].large.button, .large.button.input {
+padding:6px 16px 6px;
+}
+input[type="button"].large.button, button.large.button {
+padding:7px 16px;
+}
+
+
+/* Check Boxes ------------------------------------------------- */
+/* 
+    Hide the original radios and checkboxes
+    (but still accessible)
+    
+    :not(#foo) > is a rule filter to block browsers
+                 that don't support that selector from
+                 applying rules they shouldn't
+       
+*/
+li:not(#foo) > fieldset > div > span > input[type='radio'], 
+li:not(#foo) > fieldset > div > span > input[type='checkbox'] {
+    
+    /* Hide the input, but have it still be clickable */
+    opacity: 0;
+    
+    float: left;
+    width: 18px;
+}
+
+
+li:not(#foo) > fieldset > div > span > input[type='radio'] + label,
+li:not(#foo) > fieldset > div > span > input[type='checkbox'] + label {
+    margin: 0;
+    clear: none;
+    
+    /* Left padding makes room for image */
+    padding: 5px 0 4px 24px;
+
+    /* Make look clickable because they are */
+    cursor: pointer;
+    
+    background: url(check/off.png) left center no-repeat; 
+}
+
+/*
+    Change from unchecked to checked graphic
+*/
+li:not(#foo) > fieldset > div > span > input[type='radio']:checked + label {
+    background-image: url(check/radio.png);
+}
+li:not(#foo) > fieldset > div > span > input[type='checkbox']:checked + label {
+    background-image: url(check/check.png);
+}
